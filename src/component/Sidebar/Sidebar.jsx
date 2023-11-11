@@ -17,7 +17,7 @@ export default function sidebar(){
             </li>
             <li className="nav-link">
                 <i className='bx bx-test-tube me-3'></i>
-                <p>Labtest</p>
+                <p>Lab Test</p>
             </li>
             <li className="nav-link">
                 <i className='bx bxs-calendar-plus me-3'></i>

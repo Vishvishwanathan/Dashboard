@@ -22,5 +22,6 @@ body {
   .h-full {
     height: 100vh;
   }
-  
-  
+  .col-3{
+    align-content: baseline;
+  }
