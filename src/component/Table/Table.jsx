@@ -22,7 +22,7 @@ export default function Table({ data = [] }){
             data.map((d,i)=>(
         <tr>
             <th scope="row" className="selector">
-                <input className="form-check-input" type="checkbox" value="" id=""/>
+                <input className="form-check-input" stlye="bold"type="checkbox" value="" id=""/>
             </th>
                 <th>{d.invoiceId}</th>
                 <th>{d.date}</th>

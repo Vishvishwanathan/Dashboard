@@ -1,24 +1,28 @@
 .sidebar {
   background: #ffffff;
   width: 100%;
+  justify-items: flex-start;
 
   .branding-container {
     > .brand-name {
       font-size: 1.4rem;
       font-weight: bold;
       color: #013cc6;
-       
+      
     }
   }
   .nav-links {
+   
     width: 100%;
+    background-color: rgb(235, 224, 224);
+    padding-bottom: 350px;
     > ul {
       padding: 0px;
       margin: 0px;
       > .nav-link {
         display: flex;
         align-items: center;
-        justify-content: start;
+        
         width: 100%;
         height: 50px;
         padding: 0px 20px;

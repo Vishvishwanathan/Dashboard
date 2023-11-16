@@ -21,7 +21,6 @@ body {
   
   .h-full {
     height: 100vh;
+    font-family: small-caps;
   }
-  .col-3{
-    align-content: baseline;
-  }
+  
