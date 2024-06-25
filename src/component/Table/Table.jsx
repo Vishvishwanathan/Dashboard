@@ -1,38 +1,50 @@
 import React from "react";
-import"./Table.css";
+import "./Table.css";
 
-export default function Table({ data = [] }){
- return(
-    <table className="table table-hover">
-    <thead>
+export default function Table({ data = [] }) {
+
+  return (
+    <div className="table-scrool">
+      <table className="table table-hover">
+      <thead>
         <tr>
-            <th scope="col" className="selector">
-                <input className="form-check-input" type="checkbox" value="" id=""/>
-            </th>
-            <th scope="col">Invoive ID</th>
-            <th scope="col">Date</th>
-            <th scope="col">Customer</th>
-            <th scope="col">Payable Amount</th>
-            <th scope="col">Paid Amount</th>
-            <th scope="col">Due</th>
+          <th scope="col" className="selector">
+            <input
+              className="form-check-input"
+              type="checkbox"
+              value=""
+              id=""
+            />
+          </th>
+          <th scope="col">Invoive ID</th>
+          <th scope="col">Date</th>
+          <th scope="col">Customer</th>
+          <th scope="col">Payable Amount</th>
+          <th scope="col">Paid Amount</th>
+          <th scope="col">Due</th>
         </tr>
-    </thead>
-    <tbody>
-        {data &&
-            data.map((d,i)=>(
-        <tr>
-            <th scope="row" className="selector">
-                <input className="form-check-input" stlye="bold"type="checkbox" value="" id=""/>
-            </th>
-                <th>{d.invoiceId}</th>
-                <th>{d.date}</th>
-                <th>{d.customerName}</th>
-                <th>{d.payableAmount}</th>
-                <th>{d.paidAmount}</th>
-                <th>{d.due}</th>
-        </tr>
-            ))}
-    </tbody>
-</table>
- );
+      </thead>
+      <tbody className="table-body">
+        { data.map((d) => (
+            <tr key={d.invoiceId}>
+              <th scope="row" className="selector">
+                <input
+                  className="form-check-input"
+                  type="checkbox"
+                  value=""
+                  id=""
+                />
+              </th>
+              <td>{d.invoiceId}</td>
+              <td>{d.date}</td>
+              <td>{d.customerName}</td>
+              <td>{d.payableAmount}</td>
+              <td>{d.paidAmount}</td>
+              <td>{d.due}</td>
+            </tr>
+          ))}
+      </tbody>
+    </table>
+    </div>
+  );
 }
